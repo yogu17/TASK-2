@@ -1,0 +1,79 @@
+Difference between Browser JS(console) vs Nodejs
+
+
+*  Nodejs
+Node doesn’t have a predefined “window” object cause it doesn’t have a window to draw anything.
+
+“location” object is related to a particular url; that means it is for page specific. So, node doesn’t require that.
+
+Ofcourse Node doesn’t have “document” object also, cause it never have to render anything in a page.
+
+Node has “global”, which is a predefined global object. It contains several functions that are not available in browsers, cause they are needed for server side works only.
+
+“require” object is predefined in Node which is used to include modules in the app.
+
+
+* JS(console)
+
+“window” is a predefined global object which has functions and attributes, that have to deal with window that has been drawn.
+
+“location” is another predefined object in browsers, that has all the information about the url we have loaded.
+
+“document”, which is also another predefined global variable in browsers, has the html which is rendered.
+
+Browsers may have an object named “global”, but it will be the exact one as “window”.
+
+Browsers don’t have “require” predefined. You may include it in your app for asynchronous file loading.
+
+Moduling is not mandatory in client side JavaScript, i.e. in browsers.
+
+
+2  SUMMARY 
+  render website
+
+1. parsing html 
+    * parse tree 
+ 2   dom tree
+    * render tree
+3  yes the video shows how does the browser actully render a website
+    we learn about parsing layout painting  etc 
+
+4  yes is briefly expalin one by one to understanding 
+   actully the broweser  render works
+5    layout computes where a node will be on the scree
+painting computes bitmaps and composities to screen
+
+6 
+ I ’ll understand  place script tags at the bottom of the document, inlining 
+critical CSS & all sorts of other performance techniques.
+
+
+
+3 EXCUTE THE CODE 
+Execute the below code and write your description in txt file
+1. typeof(1)
+  * type of 1 is number 
+
+2. typeof(1.1)
+ * type of 1.1 is number 
+
+3. typeof('1.1')
+  *  type of  ('1.1') string
+
+4. typeof(true)
+ * type of true is boolean
+
+5 .typeof(null)
+* type of null is object
+
+6. typeof(undefined)
+ * undefined 
+
+7. typeof([])
+type of is [] is object
+
+8.typeof({})
+type of is {} is object
+
+9.typeof(NaN)
+* type of NaN is number 
